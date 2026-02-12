@@ -24,9 +24,14 @@
     <h3>Disenos interactivos</h3>
     <button onclick="mostrarMensaje()">Haz clic aquí</button>
     <p id="mensaje"></p>
+    <h1>Cambiar color de fondo</h1>
+    <button onclick="cambiarColor()">Cambiar color</button>
     <script>
         function mostrarMensaje() {
             document.getElementById("mensaje").innerHTML = "¡Bien hecho! 🎉";
+        }
+        function cambiarColor() {
+            document.body.style.backgroundColor = "lightblue";
         }
     </script>
 </body>
