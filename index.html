@@ -31,7 +31,13 @@
     <button onclick="mostrar()">Mostrar</button>
     <p id="resultado"></p>
     <a href="https://www.google.com">Ir a Google</a>
+    <p>Por favor, ingresa tu nombre:</p>
 
+    <form id="miFormulario">
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button type="button" onclick="mostrarNombre()">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
 
 
 
@@ -47,6 +53,11 @@
         function mostrar() {
             let valor = document.getElementById("texto").value;
             document.getElementById("resultado").innerHTML = valor;
+        }
+
+        function mostrarNombre() {
+            let nombre = document.getElementById("nombre").value;
+            document.getElementById("mensaje").innerHTML = "Hola, " + nombre + "!";
         }
 
     </script>
