@@ -26,13 +26,28 @@
     <p id="mensaje"></p>
     <h1>Cambiar color de fondo</h1>
     <button onclick="cambiarColor()">Cambiar color</button>
+    <h1>Escribe algo</h1>
+    <input type="text" id="texto">
+    <button onclick="mostrar()">Mostrar</button>
+    <p id="resultado"></p>
+
+
+
+
     <script>
         function mostrarMensaje() {
             document.getElementById("mensaje").innerHTML = "¡Bien hecho! 🎉";
         }
+
         function cambiarColor() {
             document.body.style.backgroundColor = "lightblue";
         }
+
+        function mostrar() {
+            let valor = document.getElementById("texto").value;
+            document.getElementById("resultado").innerHTML = valor;
+        }
+
     </script>
 </body>
 </html>
